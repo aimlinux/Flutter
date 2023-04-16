@@ -12,3 +12,6 @@ C:/srcディレクトリを作成し、展開したファイルをC:/src/に配�
 
     Pathを選択→編集→新規→
     「%FLUTTER_PATH%\bin」を入力→OK
+
+再起動してから、コマンドプロンプトで「flutter」、「flutter doctor」を入力
+結果が表示されればOK!

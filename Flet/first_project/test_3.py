@@ -29,6 +29,13 @@ def main(page: ft.Page):
     print(html)
     '''
     
+    page.add(
+        ft.Container(
+            width=1000,
+            height=100,
+            bgcolor=ft.colors.BROWN_900,
+        )
+    )
     
     
     first_name = ft.TextField(label="First Name", autofocus=True)
@@ -50,6 +57,15 @@ def main(page: ft.Page):
         greetings,
     )
 
+    page.add(
+        ft.Container(
+            width=1000,
+            height=100,
+            bgcolor=ft.colors.CYAN_50,
+        )
+    )
+
+    
     
     sleep(1)
     

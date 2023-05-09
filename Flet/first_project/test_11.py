@@ -24,6 +24,7 @@ def main(page: Page):
 
     pick_files_dialog = FilePicker(on_result=pick_files_result)
     selected_files = Text()
+    
 
     # Save file dialog
     def save_file_result(e: FilePickerResultEvent):

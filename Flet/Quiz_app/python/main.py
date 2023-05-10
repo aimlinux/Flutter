@@ -1,4 +1,5 @@
 import flet as ft
+import flet.version
 from flet import IconButton, Page, icons
 import tkinter as tk
 from tkinter import filedialog
@@ -9,6 +10,7 @@ from time import sleep
 import random as rand
 import sys
 import logging
+import atexit
 
 
 #log設定ファイルからlog設定を読み込み
@@ -22,7 +24,8 @@ logger.setLevel(20)
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+#fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/dart/Flet/Quiz_app/python/log/sub.log')
 logger.addHandler(fh)
 
 #全てのフォーマットオプションとその役割
@@ -41,66 +44,106 @@ fh.setFormatter(formatter)
 sh.setFormatter(formatter)
 
 
-'''
-root = tk.Tk()
-screen_width:int = root.winfo_screenwidth()
-screen_height:int = root.winfo_screenheight()
-screen_area = screen_height * screen_width
-root.destroy()
-print(screen_height, screen_width, screen_area)
-'''
 
 
+
+
+
+#pysimpleguiを使った画面の高さ・幅
 scr_w,scr_h= pg.size()
-print(scr_h)
-print(scr_w)
+print("screen_height : " + str(scr_h) + "px")
+print("screen_width : " + str(scr_w) + "px")
+scr_area = scr_h * scr_w
+
+
+#プログラムが終了したときに呼び出される関数
+@atexit.register
+def exit_handler():
+    logger.log(100, "QuizApp __END__")
 
 
 
+
+#tkinterでのメッセージボックス表示
 res = messagebox.askquestion("QuizApp", "アプリケーションを起動しますか？")
 print("OpenApp : ", res)
 logger.log(100, f"OpenApp : {res}")
 
 
 if res == "yes":
-    logger.log(100, "QuizApp START")
+    logger.log(100, "QuizApp Start")
     
 elif res == "no":
-    logger.log(100, "QuizApp EXIT")
+    logger.log(100, "QuizApp Exit")
     #pythonプログラムを終了させる
     sys.exit()
     
 
+usr_name = "mia"
 
 
 def main(page: Page):
     page.title = "aim"
+    page.theme_mode = ft.ThemeMode.LIGHT
     #top : 上端、  center : 中央、  bottom : 下端
     page.vertical_alignment = "center"
     
+    page.fonts = {
+        "Roboto Mono": "RobotoMono-VariableFont_wght.ttf",
+    }
     
-    page.add(
-        ft.Container(
-            width = screen_width,
-            height=screen_height,
-            bgcolor=ft.colors.AMBER_900,
-        )    
+    
+    
+    appbar_color = "#ef7389"
+    main_bg_color = "#ef7380"
+    
+    
+    
+    page.appbar = ft.AppBar(
+        leading=ft.Container(padding=5, content=ft.Text(value="")),
+        leading_width=40, 
+        title=ft.Text(
+            value="Quiz",
+            color="#ee1919", 
+            bgcolor=appbar_color
+        ),
+        center_title=True, 
+        bgcolor=appbar_color, 
+        actions=[
+            ft.Container(
+                padding=10, 
+                content=ft.ElevatedButton(
+                    f"Hello {usr_name}",
+                    color="#ee1919",
+                    bgcolor="#191970",
+                    #on_click=my_status_clicked,
+                )
+            )
+        ]
+        
     )
+    
+    
+    def my_status_clicked(e):
+        page.add(ft.Text("title"))
+
 
     
-    tf = ft.Text(
-        value="Quiz",
-        width=1000,
-        height=1000,
-        bgcolor=ft.colors.CYAN_100,
-    )
     
-    title_containter = ft.Container(    
-        width=1000, 
-        height=1000, 
-        bgcolor=ft.colors.CYAN_ACCENT_200,
+    page.controls.append(
+        
+        ft.Container(
+            width=int(scr_w) * 1.0,
+            height=int(scr_h) * 1,
+            bgcolor=main_bg_color
+            #gradient=ft.LinearGradient,
+        )
     )
-    page.add(title_containter)
+    page.update()
+    
+    
+    
+    
     
     
     def animation():
@@ -174,11 +217,12 @@ def main(page: Page):
             animate_scale = duration,
             animate_opacity = duration,
         )
-    
-    
+
+
 
 
 if __name__ == "__main__":
     #ft.app(target=main, view=ft.WEB_BROWSER)
     ft.app(target=main)
-    #root.mainloop()s
+    
+    

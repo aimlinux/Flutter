@@ -3,7 +3,7 @@ from flet import IconButton, Page, icons
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
-from tkinter import ttk
+import pyautogui as pg
 import time 
 from time import sleep
 import random as rand
@@ -41,13 +41,19 @@ fh.setFormatter(formatter)
 sh.setFormatter(formatter)
 
 
-
+'''
 root = tk.Tk()
 screen_width:int = root.winfo_screenwidth()
 screen_height:int = root.winfo_screenheight()
 screen_area = screen_height * screen_width
 root.destroy()
+print(screen_height, screen_width, screen_area)
+'''
 
+
+scr_w,scr_h= pg.size()
+print(scr_h)
+print(scr_w)
 
 
 
@@ -123,7 +129,6 @@ def main(page: Page):
             (3, 1, c1),
             (3, 2, c1),
             (3, 3, c1),
-            (4, )
             # U
             (4, 0, c2),
             (4, 1, c2),

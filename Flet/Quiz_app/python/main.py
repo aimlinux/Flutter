@@ -14,7 +14,6 @@ import logging
 #log設定ファイルからlog設定を読み込み
 #logging.config.fileConfig('logging.conf')
 
-
 #logの出力名を設定
 logger = logging.getLogger('Log')
 #logLevelを設定
@@ -43,6 +42,13 @@ sh.setFormatter(formatter)
 
 
 
+root = tk.Tk()
+screen_width:int = root.winfo_screenwidth()
+screen_height:int = root.winfo_screenheight()
+screen_area = screen_height * screen_width
+root.destroy()
+
+
 
 
 res = messagebox.askquestion("QuizApp", "アプリケーションを起動しますか？")
@@ -55,6 +61,7 @@ if res == "yes":
     
 elif res == "no":
     logger.log(100, "QuizApp EXIT")
+    #pythonプログラムを終了させる
     sys.exit()
     
 
@@ -64,6 +71,31 @@ def main(page: Page):
     page.title = "aim"
     #top : 上端、  center : 中央、  bottom : 下端
     page.vertical_alignment = "center"
+    
+    
+    page.add(
+        ft.Container(
+            width = screen_width,
+            height=screen_height,
+            bgcolor=ft.colors.AMBER_900,
+        )    
+    )
+
+    
+    tf = ft.Text(
+        value="Quiz",
+        width=1000,
+        height=1000,
+        bgcolor=ft.colors.CYAN_100,
+    )
+    
+    title_containter = ft.Container(    
+        width=1000, 
+        height=1000, 
+        bgcolor=ft.colors.CYAN_ACCENT_200,
+    )
+    page.add(title_containter)
+    
     
     def animation():
         c1 = ft.colors.PINK_500
@@ -139,7 +171,9 @@ def main(page: Page):
         )
     
     
-    
 
-#ft.app(target=main, view=ft.WEB_BROWSER)
-ft.app(target=main)
+
+if __name__ == "__main__":
+    #ft.app(target=main, view=ft.WEB_BROWSER)
+    ft.app(target=main)
+    #root.mainloop()s

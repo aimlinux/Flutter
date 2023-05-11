@@ -25,7 +25,7 @@ sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
 #fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Daily_callendar/python/log/main.log')
-fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/dart/Flet/Daily_calendar/python/log/main.log')
+fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Daily_calendar/python/log/main.log')
 #fh = logging.FileHandler('/home/j21070/ドキュメント/GitHub/Flutter/Flet/Daily_calendar/python/log/main.log')
 logger.addHandler(fh)
 
@@ -63,23 +63,6 @@ def exit_handler():
     logger.log(100, "QuizApp __END__")
 
 
-
-
-#tkinterでのメッセージボックス表示
-res = messagebox.askquestion("QuizApp", "アプリケーションを起動しますか？")
-print("OpenApp : ", res)
-logger.log(100, f"OpenApp : {res}")
-
-
-if res == "yes":
-    logger.log(100, "QuizApp Start")
-    
-elif res == "no":
-    logger.log(100, "QuizApp Exit")
-    #pythonプログラムを終了させる
-    sys.exit()
-    
-
 usr_name = "mia"
 
 
@@ -97,7 +80,6 @@ def main(page: Page):
     
     appbar_color = "#ef7389"
     main_bg_color = "#ef7380"
-    
     
     
     page.appbar = ft.AppBar(

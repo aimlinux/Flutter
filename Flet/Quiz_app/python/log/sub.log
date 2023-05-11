@@ -197,3 +197,348 @@
 2023-05-10 20:09:34,064 : OpenApp : yes
 2023-05-10 20:09:34,064 : QuizApp Start
 2023-05-10 20:09:35,899 : QuizApp __END__
+2023-05-11 17:44:24,987 : OpenApp : yes
+2023-05-11 17:44:24,987 : QuizApp Start
+2023-05-11 17:44:41,523 : QuizApp __END__
+2023-05-11 17:44:55,193 : OpenApp : yes
+2023-05-11 17:44:55,193 : QuizApp Start
+2023-05-11 17:46:20,214 : OpenApp : yes
+2023-05-11 17:46:20,214 : QuizApp Start
+2023-05-11 17:47:05,492 : OpenApp : yes
+2023-05-11 17:47:05,492 : QuizApp Start
+2023-05-11 17:47:36,167 : OpenApp : yes
+2023-05-11 17:47:36,167 : QuizApp Start
+2023-05-11 17:47:56,126 : OpenApp : yes
+2023-05-11 17:47:56,126 : QuizApp Start
+2023-05-11 17:48:13,980 : OpenApp : yes
+2023-05-11 17:48:13,981 : QuizApp Start
+2023-05-11 17:49:24,296 : OpenApp : yes
+2023-05-11 17:49:24,296 : QuizApp Start
+2023-05-11 17:50:01,086 : OpenApp : yes
+2023-05-11 17:50:01,088 : QuizApp Start
+2023-05-11 17:50:17,977 : OpenApp : yes
+2023-05-11 17:50:17,977 : QuizApp Start
+2023-05-11 17:51:58,307 : OpenApp : yes
+2023-05-11 17:51:58,308 : QuizApp Start
+2023-05-11 17:52:22,401 : OpenApp : yes
+2023-05-11 17:52:22,401 : QuizApp Start
+2023-05-11 17:52:34,041 : OpenApp : yes
+2023-05-11 17:52:34,041 : QuizApp Start
+2023-05-11 17:52:46,146 : OpenApp : yes
+2023-05-11 17:52:46,147 : QuizApp Start
+2023-05-11 17:53:08,184 : OpenApp : yes
+2023-05-11 17:53:08,185 : QuizApp Start
+2023-05-11 17:56:42,812 : OpenApp : yes
+2023-05-11 17:56:42,812 : QuizApp Start
+2023-05-11 17:56:44,864 : QuizApp __END__
+2023-05-11 17:58:05,056 : OpenApp : yes
+2023-05-11 17:58:05,056 : QuizApp Start
+2023-05-11 17:58:11,398 : QuizApp __END__
+2023-05-11 17:58:53,967 : OpenApp : yes
+2023-05-11 17:58:53,968 : QuizApp Start
+2023-05-11 17:59:01,510 : QuizApp __END__
+2023-05-11 17:59:44,019 : OpenApp : yes
+2023-05-11 17:59:44,019 : QuizApp Start
+2023-05-11 17:59:58,502 : QuizApp __END__
+2023-05-11 18:00:49,242 : OpenApp : yes
+2023-05-11 18:00:49,242 : QuizApp Start
+2023-05-11 18:00:55,723 : ElevatedButton clicked
+2023-05-11 18:00:59,604 : ElevatedButton clicked
+2023-05-11 18:00:59,808 : ElevatedButton clicked
+2023-05-11 18:01:00,038 : ElevatedButton clicked
+2023-05-11 18:01:00,238 : ElevatedButton clicked
+2023-05-11 18:01:00,464 : ElevatedButton clicked
+2023-05-11 18:01:00,674 : ElevatedButton clicked
+2023-05-11 18:01:00,898 : ElevatedButton clicked
+2023-05-11 18:01:08,649 : ElevatedButton clicked
+2023-05-11 18:01:08,825 : ElevatedButton clicked
+2023-05-11 18:01:09,032 : ElevatedButton clicked
+2023-05-11 18:01:10,873 : ElevatedButton clicked
+2023-05-11 18:01:11,060 : ElevatedButton clicked
+2023-05-11 18:01:12,200 : ElevatedButton clicked
+2023-05-11 18:01:15,652 : QuizApp __END__
+2023-05-11 18:04:58,430 : OpenApp : yes
+2023-05-11 18:04:58,430 : QuizApp Start
+2023-05-11 18:05:00,182 : SettingsButton clicked
+2023-05-11 18:05:02,451 : SettingsButton clicked
+2023-05-11 18:05:02,666 : SettingsButton clicked
+2023-05-11 18:05:02,842 : SettingsButton clicked
+2023-05-11 18:05:03,011 : SettingsButton clicked
+2023-05-11 18:05:07,355 : QuizApp __END__
+2023-05-11 18:05:35,055 : OpenApp : yes
+2023-05-11 18:05:35,055 : QuizApp Start
+2023-05-11 18:05:36,461 : ElevatedButton clicked
+2023-05-11 18:05:37,332 : ElevatedButton clicked
+2023-05-11 18:05:37,525 : ElevatedButton clicked
+2023-05-11 18:05:37,703 : ElevatedButton clicked
+2023-05-11 18:05:38,362 : SettingsButton clicked
+2023-05-11 18:06:04,639 : QuizApp __END__
+2023-05-11 18:07:22,067 : OpenApp : yes
+2023-05-11 18:07:22,067 : QuizApp Start
+2023-05-11 18:07:31,077 : QuizApp __END__
+2023-05-11 18:07:42,626 : OpenApp : yes
+2023-05-11 18:07:42,626 : QuizApp Start
+2023-05-11 18:07:44,410 : MenuButton clicked
+2023-05-11 18:07:46,723 : MenuButton clicked
+2023-05-11 18:07:46,896 : MenuButton clicked
+2023-05-11 18:07:48,882 : QuizApp __END__
+2023-05-11 18:08:35,429 : OpenApp : yes
+2023-05-11 18:08:35,429 : QuizApp Start
+2023-05-11 18:08:36,910 : MenuButton clicked
+2023-05-11 18:08:41,317 : MenuButton clicked
+2023-05-11 18:08:43,614 : ElevatedButton clicked
+2023-05-11 18:08:45,591 : SettingsButton clicked
+2023-05-11 18:09:04,154 : QuizApp __END__
+2023-05-11 18:09:29,749 : OpenApp : yes
+2023-05-11 18:09:29,749 : QuizApp Start
+2023-05-11 18:10:15,514 : OpenApp : yes
+2023-05-11 18:10:15,514 : QuizApp Start
+2023-05-11 18:10:26,955 : QuizApp __END__
+2023-05-11 18:10:42,136 : OpenApp : yes
+2023-05-11 18:10:42,137 : QuizApp Start
+2023-05-11 18:10:45,328 : MenuButton clicked
+2023-05-11 18:10:46,404 : QuizApp __END__
+2023-05-11 18:10:53,908 : OpenApp : yes
+2023-05-11 18:10:53,909 : QuizApp Start
+2023-05-11 18:10:59,559 : MenuButton clicked
+2023-05-11 18:11:00,428 : ElevatedButton clicked
+2023-05-11 18:11:01,431 : SettingsButton clicked
+2023-05-11 18:11:06,745 : QuizApp __END__
+2023-05-11 18:11:13,383 : OpenApp : yes
+2023-05-11 18:11:13,384 : QuizApp Start
+2023-05-11 18:11:25,814 : ElevatedButton clicked
+2023-05-11 18:11:27,531 : ElevatedButton clicked
+2023-05-11 18:11:27,733 : ElevatedButton clicked
+2023-05-11 18:11:28,258 : SettingsButton clicked
+2023-05-11 18:16:03,862 : ElevatedButton clicked
+2023-05-11 18:16:04,973 : ElevatedButton clicked
+2023-05-11 18:16:05,180 : ElevatedButton clicked
+2023-05-11 18:16:05,363 : ElevatedButton clicked
+2023-05-11 18:19:03,516 : OpenApp : yes
+2023-05-11 18:19:03,516 : QuizApp Start
+2023-05-11 18:19:05,390 : QuizApp __END__
+2023-05-11 18:19:25,316 : OpenApp : yes
+2023-05-11 18:19:25,316 : QuizApp Start
+2023-05-11 18:19:26,625 : QuizApp __END__
+2023-05-11 18:20:56,199 : OpenApp : yes
+2023-05-11 18:20:56,200 : QuizApp Start
+2023-05-11 18:26:42,715 : OpenApp : yes
+2023-05-11 18:26:42,716 : QuizApp Start
+2023-05-11 18:27:14,630 : QuizApp __END__
+2023-05-11 18:27:58,153 : OpenApp : yes
+2023-05-11 18:27:58,153 : QuizApp Start
+2023-05-11 18:28:05,081 : QuizApp __END__
+2023-05-11 18:28:22,103 : OpenApp : yes
+2023-05-11 18:28:22,104 : QuizApp Start
+2023-05-11 18:28:32,344 : QuizApp __END__
+2023-05-11 18:28:37,665 : OpenApp : yes
+2023-05-11 18:28:37,665 : QuizApp Start
+2023-05-11 18:28:43,002 : QuizApp __END__
+2023-05-11 18:29:09,982 : OpenApp : yes
+2023-05-11 18:29:09,982 : QuizApp Start
+2023-05-11 18:29:45,483 : QuizApp __END__
+2023-05-11 18:30:46,535 : OpenApp : yes
+2023-05-11 18:30:46,535 : QuizApp Start
+2023-05-11 18:31:01,338 : QuizApp __END__
+2023-05-11 18:34:35,765 : OpenApp : yes
+2023-05-11 18:34:35,765 : QuizApp Start
+2023-05-11 18:34:37,245 : QuizApp __END__
+2023-05-11 18:39:31,312 : OpenApp : yes
+2023-05-11 18:39:31,312 : QuizApp Start
+2023-05-11 18:39:35,181 : QuizApp __END__
+2023-05-11 18:39:58,310 : OpenApp : yes
+2023-05-11 18:39:58,310 : QuizApp Start
+2023-05-11 18:40:00,160 : QuizApp __END__
+2023-05-11 18:40:12,660 : OpenApp : yes
+2023-05-11 18:40:12,660 : QuizApp Start
+2023-05-11 18:42:18,839 : QuizApp __END__
+2023-05-11 18:43:25,747 : OpenApp : yes
+2023-05-11 18:43:25,747 : QuizApp Start
+2023-05-11 18:43:29,480 : QuizApp __END__
+2023-05-11 18:43:57,330 : OpenApp : yes
+2023-05-11 18:43:57,330 : QuizApp Start
+2023-05-11 18:43:58,655 : QuizApp __END__
+2023-05-11 18:45:12,154 : OpenApp : yes
+2023-05-11 18:45:12,155 : QuizApp Start
+2023-05-11 18:45:13,529 : QuizApp __END__
+2023-05-11 18:46:04,347 : OpenApp : yes
+2023-05-11 18:46:04,347 : QuizApp Start
+2023-05-11 18:46:05,780 : QuizApp __END__
+2023-05-11 18:49:32,826 : OpenApp : yes
+2023-05-11 18:49:32,826 : QuizApp Start
+2023-05-11 18:49:34,221 : QuizApp __END__
+2023-05-11 18:50:20,408 : OpenApp : yes
+2023-05-11 18:50:20,408 : QuizApp Start
+2023-05-11 18:50:23,287 : QuizApp __END__
+2023-05-11 18:50:45,202 : OpenApp : yes
+2023-05-11 18:50:45,203 : QuizApp Start
+2023-05-11 18:50:46,551 : QuizApp __END__
+2023-05-11 18:51:09,349 : OpenApp : yes
+2023-05-11 18:51:09,349 : QuizApp Start
+2023-05-11 18:51:21,266 : QuizApp __END__
+2023-05-11 18:55:02,486 : OpenApp : yes
+2023-05-11 18:55:02,486 : QuizApp Start
+2023-05-11 18:55:03,843 : QuizApp __END__
+2023-05-11 19:00:39,257 : OpenApp : yes
+2023-05-11 19:00:39,257 : QuizApp Start
+2023-05-11 19:00:41,889 : QuizApp __END__
+2023-05-11 19:00:53,001 : OpenApp : yes
+2023-05-11 19:00:53,001 : QuizApp Start
+2023-05-11 19:00:58,469 : QuizApp __END__
+2023-05-11 19:01:04,888 : OpenApp : yes
+2023-05-11 19:01:04,888 : QuizApp Start
+2023-05-11 19:01:19,006 : QuizApp __END__
+2023-05-11 19:01:30,382 : OpenApp : yes
+2023-05-11 19:01:30,382 : QuizApp Start
+2023-05-11 19:01:32,422 : QuizApp __END__
+2023-05-11 19:01:45,312 : OpenApp : yes
+2023-05-11 19:01:45,313 : QuizApp Start
+2023-05-11 19:01:46,929 : QuizApp __END__
+2023-05-11 19:03:29,944 : OpenApp : yes
+2023-05-11 19:03:29,944 : QuizApp Start
+2023-05-11 19:03:34,638 : QuizApp __END__
+2023-05-11 19:04:45,010 : OpenApp : yes
+2023-05-11 19:04:45,010 : QuizApp Start
+2023-05-11 19:04:46,345 : QuizApp __END__
+2023-05-11 19:04:59,565 : OpenApp : yes
+2023-05-11 19:04:59,565 : QuizApp Start
+2023-05-11 19:05:01,296 : QuizApp __END__
+2023-05-11 19:05:53,974 : OpenApp : yes
+2023-05-11 19:05:53,974 : QuizApp Start
+2023-05-11 19:05:56,394 : QuizApp __END__
+2023-05-11 19:06:01,422 : OpenApp : yes
+2023-05-11 19:06:01,422 : QuizApp Start
+2023-05-11 19:06:03,657 : QuizApp __END__
+2023-05-11 19:06:13,702 : OpenApp : yes
+2023-05-11 19:06:13,702 : QuizApp Start
+2023-05-11 19:06:15,766 : QuizApp __END__
+2023-05-11 19:06:28,459 : OpenApp : yes
+2023-05-11 19:06:28,459 : QuizApp Start
+2023-05-11 19:06:33,545 : QuizApp __END__
+2023-05-11 19:06:52,692 : OpenApp : yes
+2023-05-11 19:06:52,692 : QuizApp Start
+2023-05-11 19:06:54,744 : QuizApp __END__
+2023-05-11 19:07:06,037 : OpenApp : yes
+2023-05-11 19:07:06,038 : QuizApp Start
+2023-05-11 19:07:13,545 : QuizApp __END__
+2023-05-11 19:07:19,960 : OpenApp : yes
+2023-05-11 19:07:19,961 : QuizApp Start
+2023-05-11 19:07:22,219 : QuizApp __END__
+2023-05-11 19:07:44,258 : OpenApp : yes
+2023-05-11 19:07:44,259 : QuizApp Start
+2023-05-11 19:07:50,506 : QuizApp __END__
+2023-05-11 19:07:57,407 : OpenApp : yes
+2023-05-11 19:07:57,409 : QuizApp Start
+2023-05-11 19:08:00,123 : QuizApp __END__
+2023-05-11 20:17:44,881 : OpenApp : yes
+2023-05-11 20:17:44,881 : QuizApp Start
+2023-05-11 20:17:54,779 : QuizApp __END__
+2023-05-11 20:18:11,689 : OpenApp : yes
+2023-05-11 20:18:11,691 : QuizApp Start
+2023-05-11 20:18:13,952 : QuizApp __END__
+2023-05-11 20:18:19,099 : OpenApp : yes
+2023-05-11 20:18:19,101 : QuizApp Start
+2023-05-11 20:18:25,327 : QuizApp __END__
+2023-05-11 20:19:10,671 : OpenApp : yes
+2023-05-11 20:19:10,672 : QuizApp Start
+2023-05-11 20:19:13,606 : QuizApp __END__
+2023-05-11 20:19:51,065 : OpenApp : yes
+2023-05-11 20:19:51,066 : QuizApp Start
+2023-05-11 20:19:53,803 : QuizApp __END__
+2023-05-11 20:21:27,889 : OpenApp : yes
+2023-05-11 20:21:27,889 : QuizApp Start
+2023-05-11 20:21:31,252 : SettingsButton clicked
+2023-05-11 20:21:33,072 : MenuButton clicked
+2023-05-11 20:21:51,202 : QuizApp __END__
+2023-05-11 20:22:25,281 : OpenApp : yes
+2023-05-11 20:22:25,282 : QuizApp Start
+2023-05-11 20:22:27,208 : QuizApp __END__
+2023-05-11 20:22:50,639 : OpenApp : yes
+2023-05-11 20:22:50,640 : QuizApp Start
+2023-05-11 20:22:51,989 : QuizApp __END__
+2023-05-11 20:23:26,265 : OpenApp : yes
+2023-05-11 20:23:26,265 : QuizApp Start
+2023-05-11 20:23:28,749 : QuizApp __END__
+2023-05-11 20:24:01,792 : OpenApp : yes
+2023-05-11 20:24:01,793 : QuizApp Start
+2023-05-11 20:24:18,876 : QuizApp __END__
+2023-05-11 20:27:16,400 : OpenApp : yes
+2023-05-11 20:27:16,400 : QuizApp Start
+2023-05-11 20:27:19,965 : QuizApp __END__
+2023-05-11 20:27:24,146 : OpenApp : yes
+2023-05-11 20:27:24,147 : QuizApp Start
+2023-05-11 20:27:25,950 : QuizApp __END__
+2023-05-11 20:27:35,036 : OpenApp : yes
+2023-05-11 20:27:35,036 : QuizApp Start
+2023-05-11 20:27:36,548 : QuizApp __END__
+2023-05-11 20:27:42,919 : OpenApp : yes
+2023-05-11 20:27:42,920 : QuizApp Start
+2023-05-11 20:27:46,414 : QuizApp __END__
+2023-05-11 20:27:50,726 : OpenApp : yes
+2023-05-11 20:27:50,727 : QuizApp Start
+2023-05-11 20:27:52,234 : QuizApp __END__
+2023-05-11 20:28:07,066 : OpenApp : yes
+2023-05-11 20:28:07,066 : QuizApp Start
+2023-05-11 20:28:09,669 : QuizApp __END__
+2023-05-11 20:29:38,925 : OpenApp : yes
+2023-05-11 20:29:38,926 : QuizApp Start
+2023-05-11 20:29:44,062 : QuizApp __END__
+2023-05-11 20:29:54,459 : OpenApp : yes
+2023-05-11 20:29:54,459 : QuizApp Start
+2023-05-11 20:30:04,706 : QuizApp __END__
+2023-05-11 20:30:09,649 : OpenApp : yes
+2023-05-11 20:30:09,650 : QuizApp Start
+2023-05-11 20:30:12,012 : QuizApp __END__
+2023-05-11 20:30:28,800 : OpenApp : yes
+2023-05-11 20:30:28,801 : QuizApp Start
+2023-05-11 20:30:37,831 : QuizApp __END__
+2023-05-11 20:30:43,748 : OpenApp : yes
+2023-05-11 20:30:43,748 : QuizApp Start
+2023-05-11 20:30:56,239 : QuizApp __END__
+2023-05-11 20:33:38,445 : OpenApp : yes
+2023-05-11 20:33:38,446 : QuizApp Start
+2023-05-11 20:33:42,984 : QuizApp __END__
+2023-05-11 20:35:15,005 : OpenApp : yes
+2023-05-11 20:35:15,005 : QuizApp Start
+2023-05-11 20:35:17,092 : QuizApp __END__
+2023-05-11 20:35:53,870 : OpenApp : yes
+2023-05-11 20:35:53,870 : QuizApp Start
+2023-05-11 20:35:55,386 : QuizApp __END__
+2023-05-11 20:36:56,458 : OpenApp : yes
+2023-05-11 20:36:56,458 : QuizApp Start
+2023-05-11 20:36:58,605 : QuizApp __END__
+2023-05-11 20:37:04,490 : OpenApp : yes
+2023-05-11 20:37:04,490 : QuizApp Start
+2023-05-11 20:37:06,152 : QuizApp __END__
+2023-05-11 20:37:23,340 : OpenApp : yes
+2023-05-11 20:37:23,340 : QuizApp Start
+2023-05-11 20:37:25,048 : QuizApp __END__
+2023-05-11 20:37:36,892 : OpenApp : yes
+2023-05-11 20:37:36,893 : QuizApp Start
+2023-05-11 20:37:38,782 : QuizApp __END__
+2023-05-11 20:39:28,190 : OpenApp : yes
+2023-05-11 20:39:28,190 : QuizApp Start
+2023-05-11 20:39:30,040 : QuizApp __END__
+2023-05-11 20:39:43,613 : OpenApp : yes
+2023-05-11 20:39:43,613 : QuizApp Start
+2023-05-11 20:39:45,256 : QuizApp __END__
+2023-05-11 20:41:51,067 : OpenApp : yes
+2023-05-11 20:41:51,067 : QuizApp Start
+2023-05-11 20:41:53,549 : QuizApp __END__
+2023-05-11 20:42:41,578 : OpenApp : yes
+2023-05-11 20:42:41,578 : QuizApp Start
+2023-05-11 20:42:44,343 : MyStatusButton clicked
+2023-05-11 20:42:45,118 : MyStatusButton clicked
+2023-05-11 20:42:45,317 : MyStatusButton clicked
+2023-05-11 20:42:45,495 : MyStatusButton clicked
+2023-05-11 20:42:45,687 : MyStatusButton clicked
+2023-05-11 20:42:47,284 : QuizApp __END__
+2023-05-11 20:44:23,351 : OpenApp : yes
+2023-05-11 20:44:23,351 : QuizApp Start
+2023-05-11 20:44:25,298 : MyStatusButton clicked
+2023-05-11 20:44:27,356 : MyStatusButton clicked
+2023-05-11 20:44:29,017 : QuizApp __END__
+2023-05-11 20:44:36,986 : OpenApp : yes
+2023-05-11 20:44:36,987 : QuizApp Start
+2023-05-11 20:44:38,155 : MyStatusButton clicked
+2023-05-11 20:44:38,824 : QuizApp __END__

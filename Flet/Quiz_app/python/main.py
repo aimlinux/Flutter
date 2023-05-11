@@ -24,8 +24,8 @@ logger.setLevel(20)
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
-#fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/dart/Flet/Quiz_app/python/log/sub.log')
+#fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/sub.log')
 #fh = logging.FileHandler('/home/j21070/ドキュメント/GitHub/Flutter/Flet/Quiz_app/python/log/ras_ssd.log')
 logger.addHandler(fh)
 
@@ -92,21 +92,63 @@ def main(page: Page):
     page.fonts = {
         "Roboto Mono": "RobotoMono-VariableFont_wght.ttf",
     }
-    
-    
-    
+    \
     appbar_color = "#ef7389"
-    main_bg_color = "#ef7380"
+    main_bg_color = "#afeeee"
     
     
     
+    page.bgcolor = main_bg_color
+    page.padding = 20
+    #ページのスクロールオプション
+    # None(デフォルト) - 行はスクロール不可能であり、その内容がオーバーフローする可能性があります。
+    # AUTO- スクロールが有効になり、スクロールが発生した場合にのみスクロール バーが表示されます。
+    # ADAPTIVE- スクロールが有効になり、アプリを Web またはデスクトップとして実行するとスクロール バーが常に表示されます。
+    # ALWAYS- スクロールが有効になり、スクロール バーが常に表示されます。
+    # HIDDEN- スクロールは有効ですが、スクロール バーは常に非表示になります。
+    page.scroll = "AUTO"
+    
+    
+    
+    #ログイン画面
+
+    
+    #ハンバーガーメニューが押されたときの処理
+    def menu_clicked(event):
+        logger.log(50, "MenuButton clicked")
+    
+    #MyStatusが押されたときの処理
+    def my_status_clicked(event):
+        logger.log(50, "MyStatusButton clicked")
+        
+
+        dig = ft.AlertDialog(
+            title=ft.Text(f"Hello {usr_name}")
+        )
+        page.dialog = dig
+        dig.open = True   
+        page.update()
+    
+    #設定ボタンが押されたときの処理
+    def settings_clicked(event):
+        logger.log(50, "SettingsButton clicked")
+    
+    
+    
+    #アプリケーションバー
     page.appbar = ft.AppBar(
-        leading=ft.Container(padding=5, content=ft.Text(value="")),
-        leading_width=40, 
+        #leading=ft.Container(padding=5, content=ft.Text(value="")),
+        leading=
+            ft.IconButton(
+                icon="menu",
+                on_click=menu_clicked,
+                width=100
+                ), 
+            #ft.IconButton(icon="search"),
+        leading_width=60, 
         title=ft.Text(
             value="Quiz",
-            color="#ee1919", 
-            bgcolor=appbar_color
+            color="#afeeee", 
         ),
         center_title=True, 
         bgcolor=appbar_color, 
@@ -116,33 +158,60 @@ def main(page: Page):
                 content=ft.ElevatedButton(
                     f"Hello {usr_name}",
                     color="#ee1919",
-                    bgcolor="#191970",
+                    bgcolor="#afeeee",
                     #on_click=my_status_clicked,
+                    on_click=my_status_clicked,
                 )
-            )
-        ]
-        
+            ), 
+            ft.IconButton(
+                icon="settings", 
+                on_click=settings_clicked,
+                ),
+        ],
+        elevation=2,
     )
     
     
-    def my_status_clicked(e):
-        page.add(ft.Text("title"))
-
-
+    page.add
     
     
-    page.controls.append(
-        
-        ft.Container(
-            width=int(scr_w) * 1.0,
-            height=int(scr_h) * 1,
-            bgcolor=main_bg_color
-            #gradient=ft.LinearGradient,
-        )
+    labels = ft.Container(
+        content=ft.TextField(
+            label="答えを入力してください",
+            value="",
+            max_length=100,
+            multiline=True,
+            autofocus=False,
+            password="",
+            prefix="",
+            expand=True,
+            keyboard_type="text",
+            prefix_icon="",
+            color="#00bfff"
+        ),
+        bgcolor="#d8bfd8",
+        padding=10,
+        margin=10,
+        alignment=ft.alignment.center,
+        ink=True,
     )
-    page.update()
     
-    
+    page.add(labels)
+
+
+
+    main_container = ft.Container(
+        width=int(scr_w) * 1.3,
+        height=int(scr_h) * 1.3,
+        bgcolor="#d8bfd8",
+        content=ft.Text(
+            "答えを入力してください",
+            text_align="center", 
+            bgcolor="#ffffff",
+        ),
+    )
+
+    page.add(main_container)
     
     
     

@@ -25,7 +25,8 @@ sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
 #fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Daily_callendar/python/log/main.log')
-fh = logging.FileHandler('/home/j21070/ドキュメント/GitHub/Flutter/Flet/Daily_calendar/python/log/main.log')
+fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/dart/Flet/Daily_calendar/python/log/main.log')
+#fh = logging.FileHandler('/home/j21070/ドキュメント/GitHub/Flutter/Flet/Daily_calendar/python/log/main.log')
 logger.addHandler(fh)
 
 #全てのフォーマットオプションとその役割
@@ -133,7 +134,7 @@ def main(page: Page):
     page.controls.append(
         
         ft.Container(
-            width=int(scr_w) * 1.0,
+            width=int(scr_w) * 1,
             height=int(scr_h) * 1,
             bgcolor=main_bg_color
             #gradient=ft.LinearGradient,
@@ -143,6 +144,6 @@ def main(page: Page):
     
     
 if __name__ == "__main__":
-    #ft.app(target=main, view=ft.WEB_BROWSER)
-    ft.app(target=main)
+    ft.app(target=main, view=ft.WEB_BROWSER)
+    #ft.app(target=main)
     

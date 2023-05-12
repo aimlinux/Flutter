@@ -24,8 +24,8 @@ logger.setLevel(20)
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-#fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
-fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/sub.log')
+fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+#fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/sub.log')
 #fh = logging.FileHandler('/home/j21070/ドキュメント/GitHub/Flutter/Flet/Quiz_app/python/log/ras_ssd.log')
 logger.addHandler(fh)
 
@@ -57,6 +57,8 @@ print("screen_width : " + str(scr_w) + "px")
 scr_area = scr_h * scr_w
 
 
+
+
 #プログラムが終了したときに呼び出される関数
 @atexit.register
 def exit_handler():
@@ -80,7 +82,15 @@ elif res == "no":
     sys.exit()
     
 
-usr_name = "mia"
+#tkinterでの名前入力ダイアログ（ログイン画面が完成するまでの間）
+result = tk.simpledialog.askstring("Input Dialog", "Please enter your name : ")
+usr_name = result
+
+if not usr_name:
+    usr_name = "aim"
+else:
+    pass
+
 
 
 def main(page: Page):
@@ -117,21 +127,38 @@ def main(page: Page):
     def menu_clicked(event):
         logger.log(50, "MenuButton clicked")
     
+    
     #MyStatusが押されたときの処理
     def my_status_clicked(event):
         logger.log(50, "MyStatusButton clicked")
         
-
+        #AlertDialogの表示
         dig = ft.AlertDialog(
-            title=ft.Text(f"Hello {usr_name}")
+            title=ft.Text(
+                f"Hello {usr_name}", 
+                color="aqua", 
+                bgcolor="red",
+                ),
+            title_padding=10,
+            content=ft.TextField(label="名前変更", )
         )
         page.dialog = dig
         dig.open = True   
         page.update()
     
+    
     #設定ボタンが押されたときの処理
     def settings_clicked(event):
         logger.log(50, "SettingsButton clicked")
+        
+        dig_modal = ft.AlertDialog(
+            modal=True,
+            title=ft.Text()
+        )
+        page.dialog = dig_modal
+        dig_modal.open = True   
+        page.update()
+    
     
     
     
@@ -292,7 +319,7 @@ def main(page: Page):
 
 
 if __name__ == "__main__":
-    #ft.app(target=main, view=ft.WEB_BROWSER)
-    ft.app(target=main)
+    ft.app(target=main, view=ft.WEB_BROWSER)
+    #ft.app(target=main)
     
     

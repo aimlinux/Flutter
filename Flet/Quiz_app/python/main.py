@@ -13,6 +13,12 @@ import logging
 import atexit
 
 
+#グローバル変数の宣言
+main_page_view = False
+
+
+
+
 #log設定ファイルからlog設定を読み込み
 #logging.config.fileConfig('logging.conf')
 
@@ -24,8 +30,8 @@ logger.setLevel(20)
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
-#fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/sub.log')
+#fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/sub.log')
 #fh = logging.FileHandler('/home/j21070/ドキュメント/GitHub/Flutter/Flet/Quiz_app/python/log/ras_ssd.log')
 logger.addHandler(fh)
 
@@ -102,14 +108,16 @@ def main(page: Page):
     page.fonts = {
         "Roboto Mono": "RobotoMono-VariableFont_wght.ttf",
     }
-    \
+    
+    
     appbar_color = "#ef7389"
     main_bg_color = "#afeeee"
+    main_bg_color_2 = "#20b2aa"
     
     
     
     page.bgcolor = main_bg_color
-    page.padding = 20
+    page.padding = 40
     #ページのスクロールオプション
     # None(デフォルト) - 行はスクロール不可能であり、その内容がオーバーフローする可能性があります。
     # AUTO- スクロールが有効になり、スクロールが発生した場合にのみスクロール バーが表示されます。
@@ -119,14 +127,132 @@ def main(page: Page):
     page.scroll = "AUTO"
     
     
+    # def main_page_view_clicked(e):
+    #     global main_page_view
+    #     main_page_view = True
+    def main_page_view_clicked(e):
+        time.sleep(0.5)
+        start_container.visible = False
+        page.update()
+        
+        labels = ft.Container(
+            content=ft.TextField(
+                label="答えを入力してください",
+                value="",
+                max_length=100,
+                multiline=True,
+                autofocus=False,
+                password="",
+                prefix="",
+                expand=True,
+                keyboard_type="text",
+                prefix_icon="",
+                color="#00bfff"
+            ),
+            bgcolor="#d8bfd8",
+            padding=10,
+            margin=10,
+            alignment=ft.alignment.center,
+            ink=True,
+        )
+        #if main_page_view == True:
+        page.add(labels)
+        
+        main_container = ft.Container(
+            width=int(scr_w) * 1.3,
+            height=int(scr_h) * 1.3,
+            bgcolor="#d8bfd8",
+            content=ft.Text(
+                "答えを入力してください",
+                text_align="center", 
+                bgcolor="#ffffff",
+            ),
+            border_radius=50,
+        )   
+        page.add(main_container)
+        
+        
+        
+        
+    #スタート画面の設定
+    start_container = ft.Container(
+        
+        ft.Column(
+            
+            [
+                ft.Text(
+                    " おはようみあ ",
+                    size=30,
+                    color=appbar_color,
+                ),
+                ft.Text("", height=30),
+                ft.Text(
+                    "・ユーザーネイム(必須)",
+                    size=18,
+                    ),
+                ft.TextField(
+                    label="例：高専太郎",
+                    bgcolor=main_bg_color,
+                    ),
+                ft.Text("", height=10),
+                ft.Text(
+                    "・このコンフェスについて何かあれば",
+                    size=18,
+                    ),
+                ft.TextField(
+                    label="例：とても面白いですね！！",
+                    bgcolor=main_bg_color,
+                    ),
+                ft.Text("", height=10),
+                ft.Text(
+                    "・このコンフェスについて何かあれば",
+                    size=18,
+                    ),
+                ft.TextField(
+                    label="例：とても面白いですね！！",
+                    bgcolor=main_bg_color,
+                    ),
+                ft.Text("", height=25),
+                ft.ElevatedButton(
+                    text="確定する", 
+                    width=100,
+                    height=50,
+                    color="#000000",
+                    bgcolor=appbar_color,
+                    on_click=main_page_view_clicked
+                    ),
+            ],
+        height=scr_h * 1.0,
+        width=scr_w * 1.0,
+        alignment="top"
+        ),
+        bgcolor=main_bg_color_2,
+        padding=30, 
+        border_radius=50,
+        #alignment="center"
+    )
     
-    #ログイン画面
-
+    page.add(start_container)
+    page.update()
+    
+    
+    
+    
     
     #ハンバーガーメニューが押されたときの処理
     def menu_clicked(event):
         logger.log(50, "MenuButton clicked")
     
+    #名前変更が押されたとき
+    def change_name_clicked(event):
+        messagebox.showerror("title", "名前が変更されました")
+        global usr_name
+        usr_name = "みあ"
+        page.update()
+    
+    #戻るが押されたとき
+    def return_name_clicked(event):
+        messagebox.showinfo("title", "戻りましょうね")
     
     #MyStatusが押されたときの処理
     def my_status_clicked(event):
@@ -135,16 +261,22 @@ def main(page: Page):
         #AlertDialogの表示
         dig = ft.AlertDialog(
             title=ft.Text(
-                f"Hello {usr_name}", 
+                f"Hi {usr_name} !", 
                 color="aqua", 
-                bgcolor="red",
+                #bgcolor="",
+                size=20,
                 ),
             title_padding=10,
-            content=ft.TextField(label="名前変更", )
+            content=ft.TextField(label="名前変更", ),
+            actions=[
+                ft.ElevatedButton(text="変更する", on_click=change_name_clicked),
+                ft.ElevatedButton(text="戻る", on_click=return_name_clicked)
+            ]
         )
         page.dialog = dig
         dig.open = True   
         page.update()
+                
     
     
     #設定ボタンが押されたときの処理
@@ -198,47 +330,10 @@ def main(page: Page):
         elevation=2,
     )
     
-    
     page.add
     
     
-    labels = ft.Container(
-        content=ft.TextField(
-            label="答えを入力してください",
-            value="",
-            max_length=100,
-            multiline=True,
-            autofocus=False,
-            password="",
-            prefix="",
-            expand=True,
-            keyboard_type="text",
-            prefix_icon="",
-            color="#00bfff"
-        ),
-        bgcolor="#d8bfd8",
-        padding=10,
-        margin=10,
-        alignment=ft.alignment.center,
-        ink=True,
-    )
     
-    page.add(labels)
-
-
-
-    main_container = ft.Container(
-        width=int(scr_w) * 1.3,
-        height=int(scr_h) * 1.3,
-        bgcolor="#d8bfd8",
-        content=ft.Text(
-            "答えを入力してください",
-            text_align="center", 
-            bgcolor="#ffffff",
-        ),
-    )
-
-    page.add(main_container)
     
     
     

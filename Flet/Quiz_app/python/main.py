@@ -265,6 +265,7 @@ def main(page: Page):
                 color="aqua", 
                 #bgcolor="",
                 size=20,
+                
                 ),
             title_padding=10,
             content=ft.TextField(label="名前変更", ),

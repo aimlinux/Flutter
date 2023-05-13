@@ -130,10 +130,16 @@ def main(page: Page):
     # def main_page_view_clicked(e):
     #     global main_page_view
     #     main_page_view = True
+    #スタート画面で確認ボタンが押されたとき
     def main_page_view_clicked(e):
+        
         time.sleep(0.5)
+        
+        #スタート画面を消す
         start_container.visible = False
         page.update()
+        
+    
         
         labels = ft.Container(
             content=ft.TextField(
@@ -174,6 +180,7 @@ def main(page: Page):
         
         
         
+        
     #スタート画面の設定
     start_container = ft.Container(
         
@@ -181,20 +188,37 @@ def main(page: Page):
             
             [
                 ft.Text(
-                    " おはようみあ ",
+                    f" おはよう{usr_name} ",
                     size=30,
                     color=appbar_color,
                 ),
                 ft.Text("", height=30),
+                
                 ft.Text(
                     "・ユーザーネイム(必須)",
                     size=18,
+                    value="",
                     ),
                 ft.TextField(
                     label="例：高専太郎",
                     bgcolor=main_bg_color,
+                    keyboard_type="NAME",
                     ),
                 ft.Text("", height=10),
+                
+                ft.Text(
+                    "・パスワード",
+                    size=18,
+                    ),
+                ft.TextField(
+                    label="Password",
+                    bgcolor=main_bg_color,
+                    password=True,
+                    can_reveal_password=True,
+                    keyboard_type="TEXT",
+                    ),
+                ft.Text("", height=10),
+                
                 ft.Text(
                     "・このコンフェスについて何かあれば",
                     size=18,
@@ -202,20 +226,56 @@ def main(page: Page):
                 ft.TextField(
                     label="例：とても面白いですね！！",
                     bgcolor=main_bg_color,
+                    multiline=True,
+                    max_length=100,
+                    min_lines=1, 
+                    max_lines=5,
+                    keyboard_type="TEXT",
                     ),
                 ft.Text("", height=10),
-                ft.Text(
-                    "・このコンフェスについて何かあれば",
-                    size=18,
-                    ),
-                ft.TextField(
-                    label="例：とても面白いですね！！",
-                    bgcolor=main_bg_color,
-                    ),
-                ft.Text("", height=25),
+                
+                # ft.Text(
+                #     "・ff",
+                #     size=18,
+                #     ),
+                # ft.TextField(
+                #     label="例：とても面白いですね！！",
+                #     bgcolor=main_bg_color,
+                #     border="underline",
+                #     border_color="red",
+                #     border_width=1,
+                #     hint_text="Enter text here",
+                #     icon=ft.icons.FORMAT_SIZE,
+                #     prefix_icon=ft.icons.COLOR_LENS,
+                #     prefix_text="",
+                #     suffix_text="",
+                #     helper_text="※自由にご記入ください", 
+                #     counter_text="0 symbols typed",
+                #     cursor_color="red",
+                #     ),
+                # ft.Text("", height=25),
+                
+                # ft.Text(
+                #     "・ユーザーネイム(必須)",
+                #     size=18,
+                #     ),
+                # ft.TextField(
+                #     label="例：高専太郎",
+                #     bgcolor=main_bg_color,
+                #     password=True,
+                #     can_reveal_password=True,
+                #     focused_bgcolor="lightblue",
+                #     focused_border_color="lightblue",
+                #     focused_border_width=1,
+                #     focused_color="red",
+                #     keyboard_type="URL",
+                #     selection_color="",
+                #     ),
+                # ft.Text("", height=10),
+                
                 ft.ElevatedButton(
                     text="確定する", 
-                    width=100,
+                    width=90,
                     height=50,
                     color="#000000",
                     bgcolor=appbar_color,
@@ -232,6 +292,9 @@ def main(page: Page):
         #alignment="center"
     )
     
+    a = ft.TextField().value
+    print(a)
+    logger.log(100, f"Starts with {usr_name}.")
     page.add(start_container)
     page.update()
     

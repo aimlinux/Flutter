@@ -30,9 +30,7 @@ logger.setLevel(20)
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-#fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
-fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/sub.log')
-#fh = logging.FileHandler('/home/j21070/ドキュメント/GitHub/Flutter/Flet/Quiz_app/python/log/ras_ssd.log')
+#fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
 logger.addHandler(fh)
 
 #全てのフォーマットオプションとその役割
@@ -93,7 +91,7 @@ result = tk.simpledialog.askstring("Input Dialog", "Please enter your name : ")
 usr_name = result
 
 if not usr_name:
-    usr_name = "aim"
+    usr_name = "ppp"
 else:
     pass
 
@@ -319,7 +317,7 @@ def main(page: Page):
     def change_name_clicked(event):
         messagebox.showerror("title", "名前が変更されました")
         global usr_name
-        usr_name = "みあ"
+        usr_name = "opo"
         page.update()
     
     #戻るが押されたとき

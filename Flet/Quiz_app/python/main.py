@@ -91,7 +91,7 @@ result = tk.simpledialog.askstring("Input Dialog", "Please enter your name : ")
 usr_name = result
 
 if not usr_name:
-    usr_name = "aim"
+    usr_name = "000"
 else:
     pass
 
@@ -317,7 +317,7 @@ def main(page: Page):
     def change_name_clicked(event):
         messagebox.showerror("title", "名前が変更されました")
         global usr_name
-        usr_name = "みあ"
+        usr_name = "999"
         page.update()
     
     #戻るが押されたとき

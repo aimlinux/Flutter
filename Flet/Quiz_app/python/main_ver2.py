@@ -104,19 +104,9 @@ def main(page: Page):
     page.vertical_alignment = "center"
     #テキストなどオブジェクトを中央に
     #page.horizontal_alignment = "center"
+    #page.overlay = 
+    page.on_scroll_interval = 10
     
-    page.fonts = {
-        "Roboto Mono": "RobotoMono-VariableFont_wght.ttf",
-    }
-    
-    
-    appbar_color = "#ef7389"
-    main_bg_color = "#e0ffff"
-    main_bg_color_2 = "#20b2aa"
-    
-    
-    
-    page.bgcolor = main_bg_color
     page.padding = 40
     #ページのスクロールオプション
     # None(デフォルト) - 行はスクロール不可能であり、その内容がオーバーフローする可能性があります。
@@ -127,17 +117,43 @@ def main(page: Page):
     page.scroll = "AUTO"
     
     
+    
+    appbar_color = "#ef7389"
+    main_bg_color = "#e0ffff"
+    main_bg_color_2 = "#20b2aa"
+    
+    page.fonts = {
+        "Roboto Mono": "RobotoMono-VariableFont_wght.ttf",
+    }
+    
+    page.bgcolor = main_bg_color
+    
+    
+    
+    
     # def main_page_view_clicked(e):
     #     global main_page_view
     #     main_page_view = True
     #スタート画面で確認ボタンが押されたとき
-    def main_page_view_clicked(e):
+    def main_page_view_clicked(event):
         
         time.sleep(0.5)
         
         #スタート画面を消す
-        start_container.visible = False
-        page.update()
+        a.visible = False
+        b.visible = False
+        c.visible = False
+        d.visible = False
+        e.visible = False
+        f.visible = False
+        g.visible = False
+        h.visible = False
+        i.visible = False
+        j.visible = False
+        k.visible = False
+        l.visible = False
+        m.visible = False
+        print(e.value)
         
         
         labels = ft.Container(
@@ -155,6 +171,11 @@ def main(page: Page):
                 color="#00bfff"
             ),
             bgcolor="#d8bfd8",
+            gradient=ft.LinearGradient(
+                begin=ft.alignment.top_center,
+                end=ft.alignment.bottom_center,
+                colors=["#7fffd4", "#ee82ee"],
+            ),
             padding=10,
             margin=10,
             alignment=ft.alignment.center,
@@ -172,89 +193,16 @@ def main(page: Page):
                 bgcolor="#ffffff",
             ),
             border_radius=50,
+            gradient=ft.LinearGradient(
+                begin=ft.alignment.top_center,
+                end=ft.alignment.bottom_center,
+                colors=["#7fffd4", "#ee82ee"],
+            ),
         )   
         page.add(main_container)
         
         
         
-        
-    #スタート画面の設定
-    start_container = ft.Container(
-        height=scr_h * 0.75,
-        width=scr_w * 1.0,
-        alignment="top",
-        bgcolor=main_bg_color_2,
-        gradient=ft.LinearGradient(
-            begin=ft.alignment.top_center,
-            end=ft.alignment.bottom_center,
-            colors=["#7fffd4", "#ee82ee"],
-        ),
-        padding=30, 
-        border_radius=50,
-        #alignment="center"
-    )
-
-    page.add(start_container)
-    
-    
-    a = ft.Text("", height=50)
-    b = ft.Text(
-        #f" おはよう{usr_name}!! ",
-        "~~~ テキスト入力画面 ~~~",
-        size=30,
-        color=appbar_color,
-        
-    )
-    c = ft.Text("", height=30)
-    d = ft.Text(
-        "・ユーザーネイム(必須)",
-        size=18,
-        )
-    e = ft.TextField(
-        label="例：高専太郎",
-        bgcolor=main_bg_color,
-        keyboard_type="NAME",
-        value=usr_name
-        )
-    f = ft.Text("", height=30)
-    g = ft.Text(
-        "・パスワード",
-        size=18,
-        )
-    h = ft.TextField(
-        label="Password",
-        bgcolor=main_bg_color,
-        password=True,
-        can_reveal_password=True,
-        keyboard_type="TEXT",
-        )
-    i = ft.Text("", height=30)
-    j = ft.Text(
-        "・Fletについて何かあれば",
-        size=18,
-        )
-    k = ft.TextField(
-        label="例：とても面白いですね！！",
-        bgcolor=main_bg_color,
-        multiline=True,
-        max_length=100,
-        min_lines=1, 
-        max_lines=5,
-        keyboard_type="TEXT",
-        )
-    l = ft.Text("", height=30)
-    m = ft.ElevatedButton(
-        text="確定する", 
-        width=90,
-        height=50,
-        color="#000000",
-        bgcolor=appbar_color,
-        on_click=main_page_view_clicked
-        )
-    page.add(a, b, c, d, e, f, g, h, i, j, k, l, m)
-    
-    
-    
     
     
     
@@ -262,11 +210,12 @@ def main(page: Page):
     def menu_clicked(event):
         logger.log(50, "MenuButton clicked")
     
+    
+    
+    
     #名前変更が押されたとき
     def change_name_clicked(event):
         messagebox.showerror("title", "名前が変更されました")
-        global usr_name
-        usr_name = "opo"
         page.update()
     
     #戻るが押されたとき
@@ -280,7 +229,7 @@ def main(page: Page):
         #AlertDialogの表示
         dig = ft.AlertDialog(
             title=ft.Text(
-                f"Hi {usr_name} !", 
+                f"Hi {e.value} !", 
                 color="aqua", 
                 #bgcolor="",
                 size=20,
@@ -313,6 +262,86 @@ def main(page: Page):
     
     
     
+    #スタート画面の設定
+    # start_container = ft.Container(
+    #     height=scr_h * 0.75,
+    #     width=scr_w * 1.0,
+    #     #alignment="top",
+    #     bgcolor=main_bg_color_2,
+    #     gradient=ft.LinearGradient(
+    #         begin=ft.alignment.top_center,
+    #         end=ft.alignment.bottom_center,
+    #         colors=["#7fffd4", "#ee82ee"],
+    #     ),
+    #     padding=30, 
+    #     border_radius=50,
+    #     #alignment="center"
+    # )
+    
+    
+    
+    
+    
+    global e
+    
+    a = ft.Text("", height=50)
+    b = ft.Text(
+        "~~~ テキスト入力画面 ~~~",
+        size=30,
+        color=appbar_color,
+    )
+    c = ft.Text("", height=30)
+    d = ft.Text(
+        "・ユーザーネイム(必須)",
+        size=18,
+        )
+    e = ft.TextField(
+        label="例：高専太郎",
+        bgcolor=main_bg_color,
+        keyboard_type="NAME",
+        value=""
+        )
+    f = ft.Text("", height=30)
+    g = ft.Text(
+        "・パスワード",
+        size=18,
+        )
+    h = ft.TextField(
+        label="Password",
+        bgcolor=main_bg_color,
+        password=True,
+        can_reveal_password=True,
+        keyboard_type="TEXT",
+        )
+    i = ft.Text("", height=30)
+    j = ft.Text(
+        "・Fletについて何かあれば",
+        size=18,
+        )
+    k = ft.TextField(
+        label="例：とても面白いですね！！",
+        bgcolor=main_bg_color,
+        multiline=True,
+        max_length=100,
+        min_lines=1, 
+        max_lines=5,
+        keyboard_type="TEXT",
+        )
+    l = ft.Text("", height=20)
+    m = ft.ElevatedButton(
+        text="確定する", 
+        width=90,
+        height=50,
+        color="#000000",
+        bgcolor=appbar_color,
+        on_click=main_page_view_clicked
+        )
+    
+    #page.add(start_container)
+    page.add(a, b, c, d, e, f, g, h, i, j, k, l, m)
+    
+    
+    
     
     #アプリケーションバー
     page.appbar = ft.AppBar(
@@ -335,10 +364,9 @@ def main(page: Page):
             ft.Container(
                 padding=10, 
                 content=ft.ElevatedButton(
-                    f"Hello {usr_name}",
+                    f"Your Status",
                     color="#ee1919",
                     bgcolor="#afeeee",
-                    #on_click=my_status_clicked,
                     on_click=my_status_clicked,
                 )
             ), 

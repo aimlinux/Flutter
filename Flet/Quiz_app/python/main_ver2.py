@@ -30,7 +30,7 @@ logger.setLevel(20)
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-#fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
 logger.addHandler(fh)
 
 #全てのフォーマットオプションとその役割
@@ -102,6 +102,8 @@ def main(page: Page):
     page.theme_mode = ft.ThemeMode.LIGHT
     #top : 上端、  center : 中央、  bottom : 下端
     page.vertical_alignment = "center"
+    #テキストなどオブジェクトを中央に
+    #page.horizontal_alignment = "center"
     
     page.fonts = {
         "Roboto Mono": "RobotoMono-VariableFont_wght.ttf",
@@ -137,7 +139,6 @@ def main(page: Page):
         start_container.visible = False
         page.update()
         
-    
         
         labels = ft.Container(
             content=ft.TextField(
@@ -159,7 +160,6 @@ def main(page: Page):
             alignment=ft.alignment.center,
             ink=True,
         )
-        #if main_page_view == True:
         page.add(labels)
         
         main_container = ft.Container(
@@ -178,116 +178,11 @@ def main(page: Page):
         
         
         
-    #usr_nameの入力された値のvalue
-    global val_name
-    val_name = 'aimlinux'
-        
     #スタート画面の設定
     start_container = ft.Container(
-        
-        ft.Column(
-            
-            [
-                ft.Text(
-                    #f" おはよう{usr_name}!! ",
-                    "                       ~~~ テキスト入力画面 ~~~",
-                    size=30,
-                    color=appbar_color,
-                ),
-                ft.Text("", height=30),
-                
-                ft.Text(
-                    "・ユーザーネイム(必須)",
-                    size=18,
-                    ),
-                ft.TextField(
-                    label="例：高専太郎",
-                    bgcolor=main_bg_color,
-                    keyboard_type="NAME",
-                    value=val_name
-                    ),
-                ft.Text("", height=10),
-                
-                ft.Text(
-                    "・パスワード",
-                    size=18,
-                    ),
-                ft.TextField(
-                    label="Password",
-                    bgcolor=main_bg_color,
-                    password=True,
-                    can_reveal_password=True,
-                    keyboard_type="TEXT",
-                    ),
-                ft.Text("", height=10),
-                
-                ft.Text(
-                    "・Fletについて何かあれば",
-                    size=18,
-                    ),
-                ft.TextField(
-                    label="例：とても面白いですね！！",
-                    bgcolor=main_bg_color,
-                    multiline=True,
-                    max_length=100,
-                    min_lines=1, 
-                    max_lines=5,
-                    keyboard_type="TEXT",
-                    ),
-                ft.Text("", height=10),
-                
-                # ft.Text(
-                #     "・ff",
-                #     size=18,
-                #     ),
-                # ft.TextField(
-                #     label="例：とても面白いですね！！",
-                #     bgcolor=main_bg_color,
-                #     border="underline",
-                #     border_color="red",
-                #     border_width=1,
-                #     hint_text="Enter text here",
-                #     icon=ft.icons.FORMAT_SIZE,
-                #     prefix_icon=ft.icons.COLOR_LENS,
-                #     prefix_text="",
-                #     suffix_text="",
-                #     helper_text="※自由にご記入ください", 
-                #     counter_text="0 symbols typed",
-                #     cursor_color="red",
-                #     ),
-                # ft.Text("", height=25),
-                
-                # ft.Text(
-                #     "・ユーザーネイム(必須)",
-                #     size=18,
-                #     ),
-                # ft.TextField(
-                #     label="例：高専太郎",
-                #     bgcolor=main_bg_color,
-                #     password=True,
-                #     can_reveal_password=True,
-                #     focused_bgcolor="lightblue",
-                #     focused_border_color="lightblue",
-                #     focused_border_width=1,
-                #     focused_color="red",
-                #     keyboard_type="URL",
-                #     selection_color="",
-                #     ),
-                # ft.Text("", height=10),
-                
-                ft.ElevatedButton(
-                    text="確定する", 
-                    width=90,
-                    height=50,
-                    color="#000000",
-                    bgcolor=appbar_color,
-                    on_click=main_page_view_clicked
-                    ),
-            ],
         height=scr_h * 0.75,
         width=scr_w * 1.0,
-        alignment="top"
-        ),
+        alignment="top",
         bgcolor=main_bg_color_2,
         gradient=ft.LinearGradient(
             begin=ft.alignment.top_center,
@@ -298,12 +193,66 @@ def main(page: Page):
         border_radius=50,
         #alignment="center"
     )
-    
-    
-    print(val_name)
-    logger.log(100, f"Starts with {usr_name}.")
+
     page.add(start_container)
-    page.update()
+    
+    
+    a = ft.Text("", height=50)
+    b = ft.Text(
+        #f" おはよう{usr_name}!! ",
+        "~~~ テキスト入力画面 ~~~",
+        size=30,
+        color=appbar_color,
+        
+    )
+    c = ft.Text("", height=30)
+    d = ft.Text(
+        "・ユーザーネイム(必須)",
+        size=18,
+        )
+    e = ft.TextField(
+        label="例：高専太郎",
+        bgcolor=main_bg_color,
+        keyboard_type="NAME",
+        value=usr_name
+        )
+    f = ft.Text("", height=30)
+    g = ft.Text(
+        "・パスワード",
+        size=18,
+        )
+    h = ft.TextField(
+        label="Password",
+        bgcolor=main_bg_color,
+        password=True,
+        can_reveal_password=True,
+        keyboard_type="TEXT",
+        )
+    i = ft.Text("", height=30)
+    j = ft.Text(
+        "・Fletについて何かあれば",
+        size=18,
+        )
+    k = ft.TextField(
+        label="例：とても面白いですね！！",
+        bgcolor=main_bg_color,
+        multiline=True,
+        max_length=100,
+        min_lines=1, 
+        max_lines=5,
+        keyboard_type="TEXT",
+        )
+    l = ft.Text("", height=30)
+    m = ft.ElevatedButton(
+        text="確定する", 
+        width=90,
+        height=50,
+        color="#000000",
+        bgcolor=appbar_color,
+        on_click=main_page_view_clicked
+        )
+    page.add(a, b, c, d, e, f, g, h, i, j, k, l, m)
+    
     
     
     

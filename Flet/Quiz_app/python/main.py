@@ -9,7 +9,8 @@ import time
 from time import sleep
 import random as rand
 import sys
-import logging
+import loggin
+g
 import atexit
 
 
@@ -25,12 +26,13 @@ main_page_view = False
 #logの出力名を設定
 logger = logging.getLogger('Log')
 #logLevelを設定
-logger.setLevel(20)
+
+]logger.setLevel(20)
 #logをコンソール出力するための設定
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+#fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
 logger.addHandler(fh)
 
 #全てのフォーマットオプションとその役割

@@ -94,7 +94,7 @@ def main(page: Page):
         bgcolor=appbar_color, 
         actions=[
             ft.Container(
-                padding=10, 
+                padding=10,  
                 content=ft.ElevatedButton(
                     f"Hello {usr_name}",
                     color="#ee1919",

@@ -9,8 +9,7 @@ import time
 from time import sleep
 import random as rand
 import sys
-import loggin
-g
+import logging
 import atexit
 
 

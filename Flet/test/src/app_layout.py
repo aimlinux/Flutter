@@ -1,7 +1,7 @@
 from board import Board
 from data_store import DataStore
 from flet import (
-    ButtonStyle,
+    ButtonStyle, 
     Column,
     Container,
     Control, 

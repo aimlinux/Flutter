@@ -35,7 +35,7 @@ class AppLayout(Row):
             icon_color=colors.BLUE_GREY_400,
             selected=False,
             selected_icon=icons.ARROW_CIRCLE_RIGHT,
-            on_click=self.toggle_nav_rail,
+             on_click=self.toggle_nav_rail,
         )
         self.sidebar = Sidebar(self, self.store, page)
         self.members_view = Text("members view")

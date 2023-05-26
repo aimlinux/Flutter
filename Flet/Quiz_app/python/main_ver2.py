@@ -30,7 +30,7 @@ logger.setLevel(20)
 sh = logging.StreamHandler()
 logger.addHandler(sh)
 #logのファイル出力先設定
-fh = logging.FileHandler('C:/Users/1k8ai/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
+fh = logging.FileHandler('C:/Users/kxiyt/Documents/GitHub/Flutter/Flet/Quiz_app/python/log/main.log')
 logger.addHandler(fh)
 
 #全てのフォーマットオプションとその役割
@@ -153,7 +153,15 @@ def main(page: Page):
         k.visible = False
         l.visible = False
         m.visible = False
-        print(e.value)
+        
+        if not e.value:
+            e.value = "NoName"
+            logger.log(100, "Starts with NoName.")
+        else:
+            NAME_VALUE:str = e.value
+            print(NAME_VALUE)
+            logger.log(100, "Starts with " + NAME_VALUE)
+        
         
         
         labels = ft.Container(

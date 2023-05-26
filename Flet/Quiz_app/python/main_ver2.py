@@ -358,8 +358,7 @@ def main(page: Page):
         keyboard_type="TEXT",
         )
     l = ft.Text("", height=20)
-    
-    if not name.value or not password.value
+    #rascreenjindra
     m = ft.ElevatedButton(
         text="確定する", 
         width=90,

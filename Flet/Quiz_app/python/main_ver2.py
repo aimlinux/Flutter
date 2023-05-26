@@ -25,7 +25,7 @@ main_page_view = False
 #logの出力名を設定
 logger = logging.getLogger('Log')
 #logLevelを設定
-logger.setLevel(20)
+logger.setLevel(100)
 #logをコンソール出力するための設定
 sh = logging.StreamHandler()
 logger.addHandler(sh)
@@ -144,24 +144,46 @@ def main(page: Page):
         b.visible = False
         c.visible = False
         d.visible = False
-        e.visible = False
+        name.visible = False
         f.visible = False
         g.visible = False
-        h.visible = False
+        password.visible = False
         i.visible = False
         j.visible = False
-        k.visible = False
+        contents.visible = False
         l.visible = False
         m.visible = False
         
-        if not e.value:
-            e.value = "NoName"
+        
+        #NAME_VALUE
+        if not name.value:
+            name.value = "NoName"
+            NAME_VALUE:str = name.value
             logger.log(100, "Starts with NoName.")
         else:
-            NAME_VALUE:str = e.value
-            print(NAME_VALUE)
-            logger.log(100, "Starts with " + NAME_VALUE)
+            NAME_VALUE:str = name.value
+            logger.log(30, "Starts with " + NAME_VALUE)
+            
+        #PASSWORD_VALUEs
+        if not password.value:
+            password.value = "NoPassword"
+            PASSWORD_VALUE:str = password.value
+            logger.log(100, "Starts with NoPassword.")
+        else:
+            PASSWORD_VALUE:str = password.value
+            logger.log(30, "Starts with " + PASSWORD_VALUE)
         
+        #CONTENTS_VALUE
+        if not contents.value:
+            contents.value = "NoContents"
+            CONTENTS_VALUE:str = password.value
+        else:
+            CONTENTS_VALUE:str = contents.value
+            logger.log(30, "Starts with " + CONTENTS_VALUE)
+        
+        
+        
+        logger.log(100, f"[ NAME : " + str(NAME_VALUE) + " ]  [ PASSWORD_VALUE : " + str(PASSWORD_VALUE) + " ]  [ CONTENTS : " + str(CONTENTS_VALUE) + " ]")
         
         
         labels = ft.Container(
@@ -237,7 +259,7 @@ def main(page: Page):
         #AlertDialogの表示
         dig = ft.AlertDialog(
             title=ft.Text(
-                f"Hi {e.value} !", 
+                f"Name : {name.value} \nPassword : {password.value} \nContents : {contents.value}", 
                 color="aqua", 
                 #bgcolor="",
                 size=20,
@@ -303,7 +325,7 @@ def main(page: Page):
         "・ユーザーネイム(必須)",
         size=18,
         )
-    e = ft.TextField(
+    name = ft.TextField(
         label="例：高専太郎",
         bgcolor=main_bg_color,
         keyboard_type="NAME",
@@ -314,7 +336,7 @@ def main(page: Page):
         "・パスワード",
         size=18,
         )
-    h = ft.TextField(
+    password = ft.TextField(
         label="Password",
         bgcolor=main_bg_color,
         password=True,
@@ -326,7 +348,7 @@ def main(page: Page):
         "・Fletについて何かあれば",
         size=18,
         )
-    k = ft.TextField(
+    contents = ft.TextField(
         label="例：とても面白いですね！！",
         bgcolor=main_bg_color,
         multiline=True,
@@ -346,14 +368,14 @@ def main(page: Page):
         )
     
     #page.add(start_container)
-    page.add(a, b, c, d, e, f, g, h, i, j, k, l, m)
+    page.add(a, b, c, d, name, f, g, password, i, j, contents, l, m)
     
     
     
     
     #アプリケーションバー
     page.appbar = ft.AppBar(
-        #leading=ft.Container(padding=5, content=ft.Text(value="")),
+        #leading=ft.Container(padding=5, content=ft.Text(value="Quiz")),
         leading=
             ft.IconButton(
                 icon="menu",
@@ -363,7 +385,7 @@ def main(page: Page):
             #ft.IconButton(icon="search"),
         leading_width=60, 
         title=ft.Text(
-            value="Quiz",
+            value="Quiz!!",
             color="#afeeee", 
         ),
         center_title=True, 

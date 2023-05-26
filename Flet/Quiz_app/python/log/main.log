@@ -332,3 +332,76 @@
 2023-05-26 14:11:28,395 : OpenApp : yes
 2023-05-26 14:11:28,395 : QuizApp Start
 2023-05-26 14:11:44,361 : Starts with è¨å¥òaê^
+2023-05-26 15:36:45,466 : OpenApp : yes
+2023-05-26 15:36:45,466 : QuizApp Start
+2023-05-26 15:37:11,704 : Starts with è¨å¥òaê^
+2023-05-26 15:37:13,574 : QuizApp __END__
+2023-05-26 15:49:54,653 : OpenApp : yes
+2023-05-26 15:49:54,653 : QuizApp Start
+2023-05-26 15:50:00,584 : Starts with mia
+2023-05-26 15:50:03,396 : MyStatusButton clicked
+2023-05-26 15:50:07,861 : QuizApp __END__
+2023-05-26 15:51:55,426 : OpenApp : yes
+2023-05-26 15:51:55,426 : QuizApp Start
+2023-05-26 15:52:00,739 : Starts with mia
+2023-05-26 15:52:02,420 : MyStatusButton clicked
+2023-05-26 15:52:08,055 : QuizApp __END__
+2023-05-26 15:52:55,621 : OpenApp : yes
+2023-05-26 15:52:55,622 : QuizApp Start
+2023-05-26 15:53:05,989 : Starts with è¨å¥òaê^
+2023-05-26 15:53:07,591 : MyStatusButton clicked
+2023-05-26 15:53:11,067 : QuizApp __END__
+2023-05-26 16:00:51,071 : OpenApp : yes
+2023-05-26 16:00:51,071 : QuizApp Start
+2023-05-26 16:00:55,746 : QuizApp __END__
+2023-05-26 16:07:49,078 : OpenApp : yes
+2023-05-26 16:07:49,078 : QuizApp Start
+2023-05-26 16:07:52,382 : QuizApp __END__
+2023-05-26 16:09:04,968 : OpenApp : yes
+2023-05-26 16:09:04,990 : QuizApp Start
+2023-05-26 16:09:08,230 : QuizApp __END__
+2023-05-26 16:09:27,102 : OpenApp : yes
+2023-05-26 16:09:27,102 : QuizApp Start
+2023-05-26 16:10:37,419 : OpenApp : yes
+2023-05-26 16:10:37,419 : QuizApp Start
+2023-05-26 16:10:59,076 : Starts with è¨å¥òaê^
+2023-05-26 16:10:59,077 : NAME : è¨å¥òaê^, PASSWORD_VALUE : 1k8aionn, CONTENTS : Ç®ÇÕÇÊÇ§Ç≤Ç¥Ç¢Ç‹Ç∑ÅB
+2023-05-26 16:11:35,901 : MyStatusButton clicked
+2023-05-26 16:11:40,763 : SettingsButton clicked
+2023-05-26 16:11:43,340 : QuizApp __END__
+2023-05-26 16:12:54,834 : OpenApp : yes
+2023-05-26 16:12:54,834 : QuizApp Start
+2023-05-26 16:13:28,163 : Starts with è¨å¥òaê^
+2023-05-26 16:13:28,165 : Starts with ÇƒÇ·Ç®Ç¶Ç¢ÇŸÇƒÇóÇîÇäÇÿÇí
+2023-05-26 16:13:28,202 : Starts with Ç®ÇÕÇÊÇ§Ç≤Ç¥Ç¢Ç‹Ç∑ÅB
+Ç±ÇÍÇ©ÇÁÇÊÇÎÇµÇ≠Ç®äËÇ¢Ç¢ÇΩÇµÇ‹Ç∑ÅB
+2023-05-26 16:13:28,203 : NAME : è¨å¥òaê^, PASSWORD_VALUE : ÇƒÇ·Ç®Ç¶Ç¢ÇŸÇƒÇóÇîÇäÇÿÇí, CONTENTS : Ç®ÇÕÇÊÇ§Ç≤Ç¥Ç¢Ç‹Ç∑ÅB
+Ç±ÇÍÇ©ÇÁÇÊÇÎÇµÇ≠Ç®äËÇ¢Ç¢ÇΩÇµÇ‹Ç∑ÅB
+2023-05-26 16:13:36,246 : QuizApp __END__
+2023-05-26 16:13:41,335 : OpenApp : yes
+2023-05-26 16:13:41,335 : QuizApp Start
+2023-05-26 16:13:50,917 : OpenApp : yes
+2023-05-26 16:13:50,917 : QuizApp Start
+2023-05-26 16:14:11,745 : Starts with konhaerig
+2023-05-26 16:14:11,745 : Starts with gaehroigharoehiogre
+2023-05-26 16:14:11,745 : Starts with goehjgorheioghera
+2023-05-26 16:14:11,746 : NAME : konhaerig, PASSWORD_VALUE : gaehroigharoehiogre, CONTENTS : goehjgorheioghera
+2023-05-26 16:14:13,933 : MyStatusButton clicked
+2023-05-26 16:15:43,118 : OpenApp : yes
+2023-05-26 16:15:43,118 : QuizApp Start
+2023-05-26 16:15:48,575 : Starts with NoName.
+2023-05-26 16:15:50,672 : [ NAME : NoName ]  [ PASSWORD_VALUE :  ]  [ CONTENTS :  ]
+2023-05-26 16:15:59,980 : QuizApp __END__
+2023-05-26 16:20:59,892 : OpenApp : yes
+2023-05-26 16:20:59,892 : QuizApp Start
+2023-05-26 16:21:20,317 : [ NAME : ka ]  [ PASSWORD_VALUE : la ]  [ CONTENTS : rete ]
+2023-05-26 16:23:09,799 : OpenApp : yes
+2023-05-26 16:23:09,799 : QuizApp Start
+2023-05-26 16:23:19,535 : [ NAME : k ]  [ PASSWORD_VALUE : j ]  [ CONTENTS : n ]
+2023-05-26 16:23:32,239 : QuizApp __END__
+2023-05-26 16:23:50,806 : OpenApp : yes
+2023-05-26 16:23:50,806 : QuizApp Start
+2023-05-26 16:24:35,723 : [ NAME : è¨å¥òaê^ ]  [ PASSWORD_VALUE : watasinomia ]  [ CONTENTS : Ç∆Ç¡ÇƒÇ‡ñ îíÇ¢ÇÀ
+Ç±ÇÍÇ©ÇÁÇÕåNÇÃéûë„ÇæÇÊ
+ãXÇµÇ≠Ç®äËÇ¢Ç¢ÇΩÇµÇ‹Ç∑ ]
+2023-05-26 16:25:11,181 : QuizApp __END__

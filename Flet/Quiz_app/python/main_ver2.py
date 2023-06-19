@@ -1,6 +1,8 @@
 import flet as ft
 import flet.version
 from flet import IconButton, Page, icons
+from flet import BorderSide
+from flet import RoundedRectangleBorder
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
@@ -187,16 +189,93 @@ def main(page: Page):
         
         
         Button_A = ft.ElevatedButton(
+            width=300,
+            height=80,
             text="初級", 
-            
+            scale=1,
+            tooltip="簡単だよ!!",
+            #bgcolor="#e000ff",
+            #color="#ffffff",
+            style=ft.ButtonStyle(
+                color={
+                    ft.MaterialState.HOVERED: ft.colors.WHITE,
+                    ft.MaterialState.FOCUSED: ft.colors.BLUE,
+                    ft.MaterialState.DEFAULT: ft.colors.BLACK,
+                },
+                bgcolor={ft.MaterialState.FOCUSED: ft.colors.PINK_200, "": ft.colors.YELLOW},
+                padding={ft.MaterialState.HOVERED: 20},
+                overlay_color=ft.colors.TRANSPARENT,
+                elevation={"pressed": 0, "": 1},
+                animation_duration=500,
+                side={
+                    ft.MaterialState.DEFAULT: BorderSide(1, ft.colors.BLUE),
+                    ft.MaterialState.HOVERED: BorderSide(2, ft.colors.BLUE),
+                },
+                shape={
+                    ft.MaterialState.HOVERED: RoundedRectangleBorder(radius=20),
+                    ft.MaterialState.DEFAULT: RoundedRectangleBorder(radius=20),
+                },
+            ),
         )
         
         Button_B = ft.ElevatedButton(
-            text="中級", 
+            width=300,
+            height=80,
+            text="中級",
+            scale=1,
+            tooltip="そこそこ難しいよ!!", 
+            #bgcolor="#e000ff",
+            #color="#ffffff",
+            style=ft.ButtonStyle(
+                color={
+                    ft.MaterialState.HOVERED: ft.colors.WHITE,
+                    ft.MaterialState.FOCUSED: ft.colors.BLUE,
+                    ft.MaterialState.DEFAULT: ft.colors.BLACK,
+                },
+                bgcolor={ft.MaterialState.FOCUSED: ft.colors.PINK_200, "": ft.colors.YELLOW},
+                padding={ft.MaterialState.HOVERED: 20},
+                overlay_color=ft.colors.TRANSPARENT,
+                elevation={"pressed": 0, "": 1},
+                animation_duration=500,
+                side={
+                    ft.MaterialState.DEFAULT: BorderSide(1, ft.colors.BLUE),
+                    ft.MaterialState.HOVERED: BorderSide(2, ft.colors.BLUE),
+                },
+                shape={
+                    ft.MaterialState.HOVERED: RoundedRectangleBorder(radius=20),
+                    ft.MaterialState.DEFAULT: RoundedRectangleBorder(radius=10),
+                },
+            ),
         )
         
         Button_C = ft.ElevatedButton(
+            width=300,
+            height=80,
             text="上級",
+            scale=1,
+            tooltip="とっても難しいよ!!",
+            #bgcolor="#e000ff",
+            #color="#ffffff",
+            style=ft.ButtonStyle(
+                color={
+                    ft.MaterialState.HOVERED: ft.colors.WHITE,
+                    ft.MaterialState.FOCUSED: ft.colors.BLUE,
+                    ft.MaterialState.DEFAULT: ft.colors.BLACK,
+                },
+                bgcolor={ft.MaterialState.FOCUSED: ft.colors.PINK_200, "": ft.colors.YELLOW},
+                padding={ft.MaterialState.HOVERED: 20},
+                overlay_color=ft.colors.TRANSPARENT,
+                elevation={"pressed": 0, "": 1},
+                animation_duration=500,
+                side={
+                    ft.MaterialState.DEFAULT: BorderSide(1, ft.colors.BLUE),
+                    ft.MaterialState.HOVERED: BorderSide(2, ft.colors.BLUE),
+                },
+                shape={
+                    ft.MaterialState.HOVERED: RoundedRectangleBorder(radius=20),
+                    ft.MaterialState.DEFAULT: RoundedRectangleBorder(radius=2),
+                },
+            ),
         )        
         
         page.add(Button_A, Button_B, Button_C)
@@ -220,10 +299,10 @@ def main(page: Page):
         
         main_container = ft.Container(
             width=int(scr_w) * 1.3,
-            height=int(scr_h) * 1.3,
+            height=int(scr_h) * 0.4,
             bgcolor="#d8bfd8",
             content=ft.Text(
-                "     ・説明 :\n・おはようみあ : \n",
+                "     ・説明 :\n初級 : \n中級 : \n上級 : \n",
                 text_align="center"
             ),
             border_radius=50,

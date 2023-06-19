@@ -186,41 +186,45 @@ def main(page: Page):
         logger.log(100, f"[ NAME : " + str(NAME_VALUE) + " ]  [ PASSWORD_VALUE : " + str(PASSWORD_VALUE) + " ]  [ CONTENTS : " + str(CONTENTS_VALUE) + " ]")
         
         
-        labels = ft.Container(
-            content=ft.TextField(
-                label="答えを入力してください",
-                value="",
-                max_length=100,
-                multiline=True,
-                autofocus=False,
-                password="",
-                prefix="",
-                expand=True,
-                keyboard_type="text",
-                prefix_icon="",
-                color="#00bfff"
-            ),
-            bgcolor="#d8bfd8",
-            gradient=ft.LinearGradient(
-                begin=ft.alignment.top_center,
-                end=ft.alignment.bottom_center,
-                colors=["#7fffd4", "#ee82ee"],
-            ),
-            padding=10,
-            margin=10,
-            alignment=ft.alignment.center,
-            ink=True,
+        Button_A = ft.ElevatedButton(
+            text="初級", 
+            
         )
-        page.add(labels)
+        
+        Button_B = ft.ElevatedButton(
+            text="中級", 
+        )
+        
+        Button_C = ft.ElevatedButton(
+            text="上級",
+        )        
+        
+        page.add(Button_A, Button_B, Button_C)
+        
+        # labels = ft.Container(
+            
+            
+            
+        #     bgcolor="#d8bfd8",
+        #     gradient=ft.LinearGradient(
+        #         begin=ft.alignment.top_center,
+        #         end=ft.alignment.bottom_center,
+        #         colors=["#7fffd4", "#ee82ee"],
+        #     ),
+        #     padding=10,
+        #     margin=10,
+        #     alignment=ft.alignment.center,
+        #     ink=True,
+        # )
+        # page.add(labels)
         
         main_container = ft.Container(
             width=int(scr_w) * 1.3,
             height=int(scr_h) * 1.3,
             bgcolor="#d8bfd8",
             content=ft.Text(
-                "答えを入力してください",
-                text_align="center", 
-                bgcolor="#ffffff",
+                "     ・説明 :\n・おはようみあ : \n",
+                text_align="center"
             ),
             border_radius=50,
             gradient=ft.LinearGradient(
@@ -410,6 +414,9 @@ def main(page: Page):
     )
     
     page.add
+    
+    
+    
     
     
     

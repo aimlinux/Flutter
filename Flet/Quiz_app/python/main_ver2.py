@@ -198,6 +198,8 @@ def main(page: Page):
             text="初級", 
             scale=1,
             tooltip="簡単だよ!!",
+            icon=ft.icons.PLAY_CIRCLE_FILL_OUTLINED, 
+            icon_color="purple",
             #bgcolor="#e000ff",
             #color="#ffffff",
             style=ft.ButtonStyle(
@@ -229,7 +231,9 @@ def main(page: Page):
             height=80,
             text="中級",
             scale=1,
-            tooltip="そこそこ難しいよ!!", 
+            tooltip="そこそこ難しいよ!!",
+            icon=ft.icons.PLAY_CIRCLE_FILL_OUTLINED, 
+            icon_color="purple", 
             #bgcolor="#e000ff",
             #color="#ffffff",
             style=ft.ButtonStyle(
@@ -262,6 +266,8 @@ def main(page: Page):
             text="上級",
             scale=1,
             tooltip="とっても難しいよ!!",
+            icon=ft.icons.PLAY_CIRCLE_FILL_OUTLINED, 
+            icon_color="purple",
             #bgcolor="#e000ff",
             #color="#ffffff",
             style=ft.ButtonStyle(
@@ -307,7 +313,7 @@ def main(page: Page):
         
         main_container = ft.Container(
             width=int(scr_w) * 1.3,
-            height=int(scr_h) * 0.4,
+            height=int(scr_h) * 0.2,
             bgcolor="#d8bfd8",
             content=ft.Text(
                 "     ・説明 :\n初級 : \n中級 : \n上級 : \n",
@@ -469,9 +475,33 @@ def main(page: Page):
     page.appbar = ft.AppBar(
         #leading=ft.Container(padding=5, content=ft.Text(value="Quiz")),
         leading=
-            ft.IconButton(
-                icon="menu",
-                on_click=menu_clicked,
+            ft.PopupMenuButton(
+                items=[
+                    ft.PopupMenuItem(text="item1"),
+                    ft.PopupMenuItem(icon=ft.icons.POWER_INPUT, text="Check power"),
+                    ft.PopupMenuItem(
+                        content=ft.Row(
+                            [
+                                ft.Icon(ft.icons.HOURGLASS_TOP_OUTLINED),
+                                ft.Text("App Exit"),
+                            ]
+                        ),
+                        on_click=lambda _: messagebox.showinfo("title", "アプリケーションを終了しますか？"),
+                    ),
+                    ft.PopupMenuItem(
+                        content=ft.Row(
+                            [
+                                ft.Icon(ft.icons.HOURGLASS_TOP_OUTLINED),
+                                ft.Text("App Exit"),
+                            ]
+                        ),
+                        on_click=lambda _: messagebox.showinfo("title", "アプリケーションを終了しますか？"),
+                    ),
+                    ft.PopupMenuItem(),  # divider
+                    ft.PopupMenuItem(
+                        text="Checked item", checked=False, on_click=menu_clicked,
+                    ),
+                ],
                 width=100
                 ), 
             #ft.IconButton(icon="search"),
@@ -587,7 +617,7 @@ def main(page: Page):
 
 
 if __name__ == "__main__":
-    #ft.app(target=main, view=ft.WEB_BROWSER)
-    ft.app(target=main)
+    ft.app(target=main, view=ft.WEB_BROWSER)
+    #ft.app(target=main)
     
     

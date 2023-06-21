@@ -576,3 +576,61 @@
 2023-06-21 15:29:40,379 : Starts with NoName.
 2023-06-21 15:29:40,379 : Starts with NoPassword.
 2023-06-21 15:29:40,380 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:34:56,039 : OpenApp : yes
+2023-06-21 15:34:56,041 : QuizApp Start
+2023-06-21 15:35:00,014 : Starts with NoName.
+2023-06-21 15:35:00,015 : Starts with NoPassword.
+2023-06-21 15:35:00,015 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:35:08,556 : QuizApp __END__
+2023-06-21 15:35:38,436 : OpenApp : yes
+2023-06-21 15:35:38,436 : QuizApp Start
+2023-06-21 15:35:44,762 : Starts with NoName.
+2023-06-21 15:35:44,763 : Starts with NoPassword.
+2023-06-21 15:35:44,763 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:35:49,606 : QuizApp __END__
+2023-06-21 15:37:23,316 : OpenApp : yes
+2023-06-21 15:37:23,316 : QuizApp Start
+2023-06-21 15:37:27,187 : Starts with NoName.
+2023-06-21 15:37:27,187 : Starts with NoPassword.
+2023-06-21 15:37:27,188 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:37:35,431 : QuizApp __END__
+2023-06-21 15:38:42,665 : OpenApp : yes
+2023-06-21 15:38:42,666 : QuizApp Start
+2023-06-21 15:38:48,320 : Starts with NoName.
+2023-06-21 15:38:48,320 : Starts with NoPassword.
+2023-06-21 15:38:48,321 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:44:37,131 : OpenApp : yes
+2023-06-21 15:44:37,133 : QuizApp Start
+2023-06-21 15:44:40,677 : Starts with NoName.
+2023-06-21 15:44:40,677 : Starts with NoPassword.
+2023-06-21 15:44:40,677 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:44:47,256 : QuizApp __END__
+2023-06-21 15:50:35,395 : OpenApp : yes
+2023-06-21 15:50:35,396 : QuizApp Start
+2023-06-21 15:50:39,173 : QuizApp __END__
+2023-06-21 15:51:34,408 : OpenApp : yes
+2023-06-21 15:51:34,408 : QuizApp Start
+2023-06-21 15:51:39,290 : Starts with NoName.
+2023-06-21 15:51:39,290 : Starts with NoPassword.
+2023-06-21 15:51:39,291 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:53:54,075 : OpenApp : yes
+2023-06-21 15:53:54,077 : QuizApp Start
+2023-06-21 15:53:57,733 : Starts with NoName.
+2023-06-21 15:53:57,734 : Starts with NoPassword.
+2023-06-21 15:53:57,735 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:55:49,042 : OpenApp : yes
+2023-06-21 15:55:49,042 : QuizApp Start
+2023-06-21 15:55:53,636 : Starts with NoName.
+2023-06-21 15:55:53,636 : Starts with NoPassword.
+2023-06-21 15:55:53,638 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:57:11,526 : OpenApp : yes
+2023-06-21 15:57:11,526 : QuizApp Start
+2023-06-21 15:57:15,499 : Starts with NoName.
+2023-06-21 15:57:15,499 : Starts with NoPassword.
+2023-06-21 15:57:15,499 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:57:21,084 : QuizApp __END__
+2023-06-21 15:57:35,371 : OpenApp : yes
+2023-06-21 15:57:35,371 : QuizApp Start
+2023-06-21 15:57:42,372 : Starts with NoName.
+2023-06-21 15:57:42,373 : Starts with NoPassword.
+2023-06-21 15:57:42,373 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]

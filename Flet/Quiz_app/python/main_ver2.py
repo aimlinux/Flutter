@@ -13,11 +13,12 @@ import random as rand
 import sys
 import logging
 import atexit
+from selenium import webdriver
+from selenium.webdriver.chrome import service
 
 
 #グローバル変数の宣言
 main_page_view = False
-
 
 
 
@@ -188,6 +189,9 @@ def main(page: Page):
         logger.log(100, f"[ NAME : " + str(NAME_VALUE) + " ]  [ PASSWORD_VALUE : " + str(PASSWORD_VALUE) + " ]  [ CONTENTS : " + str(CONTENTS_VALUE) + " ]")
         
         
+        
+        space_A = ft.Text("", height=10)
+        
         Button_A = ft.ElevatedButton(
             width=300,
             height=80,
@@ -217,6 +221,8 @@ def main(page: Page):
                 },
             ),
         )
+        
+        space_B = ft.Text("", height=20)
         
         Button_B = ft.ElevatedButton(
             width=300,
@@ -248,6 +254,8 @@ def main(page: Page):
             ),
         )
         
+        space_C = ft.Text("", height=20)
+        
         Button_C = ft.ElevatedButton(
             width=300,
             height=80,
@@ -278,7 +286,7 @@ def main(page: Page):
             ),
         )        
         
-        page.add(Button_A, Button_B, Button_C)
+        page.add(space_A, Button_A, space_B, Button_B, space_C, Button_C)
         
         # labels = ft.Container(
             
@@ -579,7 +587,7 @@ def main(page: Page):
 
 
 if __name__ == "__main__":
-    ft.app(target=main, view=ft.WEB_BROWSER)
-    #ft.app(target=main)
+    #ft.app(target=main, view=ft.WEB_BROWSER)
+    ft.app(target=main)
     
     

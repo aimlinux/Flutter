@@ -554,3 +554,25 @@
 2023-06-19 18:52:17,560 : Starts with NoName.
 2023-06-19 18:52:17,560 : Starts with NoPassword.
 2023-06-19 18:52:17,561 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:14:06,196 : OpenApp : yes
+2023-06-21 15:14:06,197 : QuizApp Start
+2023-06-21 15:14:34,057 : Starts with NoName.
+2023-06-21 15:14:34,057 : Starts with NoPassword.
+2023-06-21 15:14:34,057 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:19:36,178 : OpenApp : yes
+2023-06-21 15:19:36,178 : QuizApp Start
+2023-06-21 15:23:12,628 : OpenApp : yes
+2023-06-21 15:23:12,628 : QuizApp Start
+2023-06-21 15:23:53,238 : [ NAME : koharakazuma ]  [ PASSWORD_VALUE : 1k8aionn ]  [ CONTENTS : I am a student ]
+2023-06-21 15:27:57,840 : OpenApp : yes
+2023-06-21 15:27:57,862 : QuizApp Start
+2023-06-21 15:28:13,796 : Starts with NoName.
+2023-06-21 15:28:13,796 : Starts with NoPassword.
+2023-06-21 15:28:13,796 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-06-21 15:29:01,902 : OpenApp : yes
+2023-06-21 15:29:01,902 : QuizApp Start
+2023-06-21 15:29:34,796 : OpenApp : yes
+2023-06-21 15:29:34,796 : QuizApp Start
+2023-06-21 15:29:40,379 : Starts with NoName.
+2023-06-21 15:29:40,379 : Starts with NoPassword.
+2023-06-21 15:29:40,380 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]

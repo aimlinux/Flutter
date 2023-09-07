@@ -651,3 +651,11 @@
 2023-08-31 13:29:56,318 : QuizApp Start
 2023-08-31 13:30:09,174 : Starts with mia.
 2023-08-31 13:30:37,531 : MenuButton clicked
+2023-09-01 17:23:40,531 : OpenApp : yes
+2023-09-01 17:23:40,531 : QuizApp Start
+2023-09-01 17:24:12,556 : Starts with NoName.
+2023-09-01 17:24:12,556 : Starts with NoPassword.
+2023-09-01 17:24:12,556 : [ NAME : NoName ]  [ PASSWORD_VALUE : NoPassword ]  [ CONTENTS : NoPassword ]
+2023-09-01 17:32:37,821 : OpenApp : no
+2023-09-01 17:32:37,821 : QuizApp Exit
+2023-09-01 17:32:37,822 : QuizApp __END__
